@@ -209,11 +209,9 @@ public class serviceRun {
            if(!mapFile.containsKey(file))
            {
                String sqlquery="select * from tb_backfiles where filepath='"+file.replace("\\","\\\\").replace("'","\\'")+"' and backuprootid="+backuproot.getId();
-               //ResultSet ret= mysqlHelper.querySql(sqlquery);
-           //if(ret==null||!ret.next()) {
                //第一次拷贝，创建档案
                mysqlHelper.exeSql("insert into tb_backfiles (backuprootid,filepath,versionhistorycnt,lastbackuptime) values (" +
-                       backuproot.getId() + ",'" + file.replace("\\","\\\\").replace("'","\\'") + "',0,now())");
+                       backuproot.getId() + ",'" + file.replace("\\","\\\\").replace("'","\\'") + "',0,datetime('now'))");
                ResultSet ret= mysqlHelper.querySql(sqlquery);
                if(ret==null||!ret.next())
                {
@@ -268,18 +266,18 @@ public class serviceRun {
     }
 
     private int beginbackup() throws SQLException {
-        mysqlHelper.exeSql("insert into tb_backup (begintime) values(now())");
-        ResultSet ret=mysqlHelper.querySql("select LAST_INSERT_ID() from tb_backup");
+        mysqlHelper.exeSql("insert into tb_backup (begintime) values(datetime('now'))");
+        ResultSet ret=mysqlHelper.querySql("select last_insert_rowid() from tb_backup");
         if(ret!=null&&ret.next())
         {
-           return ret.getInt("LAST_INSERT_ID()");
+           return ret.getInt("last_insert_rowid()");
         }
         return -1;
     }
 
     private void finishbackup()
     {
-        mysqlHelper.exeSql("update tb_backup set endtime=now(),filecopycount="+filecopycount+",datacopycount="+datacopycount+" where id="+backupid);
+        mysqlHelper.exeSql("update tb_backup set endtime=datetime('now'),filecopycount="+filecopycount+",datacopycount="+datacopycount+" where id="+backupid);
     }
 
     public void deleteByBackuprootid(long rootid) throws SQLException {

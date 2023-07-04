@@ -18,10 +18,10 @@ import java.util.ResourceBundle;
  */
 public class MySQLHelper
 {
-    public String url = null;// "jdbc:mysql://127.0.0.1/vge_whu"; //数据库连接
-    public String name = "com.mysql.cj.jdbc.Driver";   //程序驱动
-    public String user = null;//"root";  //用户名
-    public String password = null;//"abc@123"; //密码
+//    public String url = null;// "jdbc:mysql://127.0.0.1/vge_whu"; //数据库连接
+//    public String name = "com.mysql.cj.jdbc.Driver";   //程序驱动
+//    public String user = null;//"root";  //用户名
+//    public String password = null;//"abc@123"; //密码
     private String configFilename;
     public int maxpackage=1024;
     public Connection conn = null;
@@ -32,10 +32,10 @@ public class MySQLHelper
         ResourceBundle bundle=null;
         try {
             bundle = ResourceBundle.getBundle(configFilename);
-            url=bundle.getString("mysqlurl");
-            user=bundle.getString("mysqluser");
-            password=bundle.getString("mysqlpassword");
-            maxpackage=Integer.parseInt(bundle.getString("max_allowed_packet"));
+//            url=bundle.getString("mysqlurl");
+//            user=bundle.getString("mysqluser");
+//            password=bundle.getString("mysqlpassword");
+//            maxpackage=Integer.parseInt(bundle.getString("max_allowed_packet"));
         } catch (Exception var6) {
             var6.printStackTrace(System.out);
             logger.error("Can not Found Config File dbconfig.properties");
@@ -44,22 +44,10 @@ public class MySQLHelper
 
     public boolean init()
     {
-        if(url==null)
-        {
-            try {
-                initCfg();
-            } catch (Exception e) {
-                StringWriter sw = new StringWriter();
-                PrintWriter pw = new PrintWriter(sw);
-                e.printStackTrace(pw);
-                logger.error(e.toString());
-                return false;
-            }
-        }
-        try
-        {
-            Class.forName(name);// 指定连接类型
-            conn = DriverManager.getConnection(url, user, password);// 获取连接
+        String dbPath = "jdbc:sqlite:D:/a.db";
+        try {
+            System.out.println(DriverManager.getConnection(dbPath));
+            conn = DriverManager.getConnection(dbPath);// 获取连接
             logger.info("mysql connected!");
             return true;
         } catch (Exception e)
