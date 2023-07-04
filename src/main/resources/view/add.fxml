@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<BorderPane styleClass="main-container" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.timemachine.ui.Add">
+  <left>
+    <VBox fx:id="left" styleClass="left" alignment="TOP_CENTER"  xmlns:fx="http://javafx.com/fxml">
+    </VBox>
+  </left>
+  <center>
+    <!-- 右侧内容 -->
+    <Label text="右侧内容区域" style="-fx-font-size: 20px; -fx-alignment: center;" />
+  </center>
+</BorderPane>
