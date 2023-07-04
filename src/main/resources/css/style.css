@@ -91,3 +91,9 @@
     -fx-background-color: #b4d2f8;
     -fx-border-color: #4fa2fa;
 }
+
+text-field {
+    -fx-padding: 0;
+    -fx-border-width: 0;
+    /* 添加其他样式调整 */
+}

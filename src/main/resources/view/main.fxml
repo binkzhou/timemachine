@@ -6,7 +6,7 @@
 <?import javafx.collections.FXCollections?>
 <?import java.lang.String?>
 <?import javafx.scene.layout.HBox?>
-<BorderPane styleClass="main-container" xmlns:fx="http://javafx.com/fxml"
+<BorderPane fx:id="panne" styleClass="main-container" xmlns:fx="http://javafx.com/fxml"
             fx:controller="com.timemachine.ui.App">
   <left>
     <VBox fx:id="left" styleClass="left" alignment="TOP_CENTER"  xmlns:fx="http://javafx.com/fxml">
@@ -16,21 +16,21 @@
     </VBox>
   </left>
   <center>
-    <HBox styleClass="file-list">
+
+    <HBox styleClass="file-list" fx:id="content1" >
       <VBox HBox.hgrow="ALWAYS">
-        <ListView  fx:id="listView" styleClass="custom-list-view" VBox.vgrow="ALWAYS">
-          <items>
-            <!-- 添加数据项 -->
-            <FXCollections fx:factory="observableArrayList">
-              <String fx:value="Item 1" />
-              <String fx:value="Item 2" />
-              <String fx:value="Item 3" />
-              <String fx:value="Item 4" />
-              <String fx:value="Item 5" />
-            </FXCollections>
-          </items>
+        <ListView  editable="true" fx:id="listView" styleClass="custom-list-view" VBox.vgrow="ALWAYS">
+<!--          <items>-->
+<!--            &lt;!&ndash; 添加数据项 &ndash;&gt;-->
+<!--            <FXCollections fx:factory="observableArrayList">-->
+<!--              <String  fx:value="Item 1" />-->
+<!--              <String fx:value="Item 2" />-->
+<!--              <String fx:value="Item 3" />-->
+<!--              <String fx:value="Item 4" />-->
+<!--              <String fx:value="Item 5" />-->
+<!--            </FXCollections>-->
+<!--          </items>-->
         </ListView>
-<!--        <ListView fx:id="listView" styleClass="custom-list-view" VBox.vgrow="ALWAYS" />-->
       </VBox>
       <VBox  prefWidth="110" alignment="TOP_RIGHT" spacing="10">
         <Button text="新建" styleClass="btn" />
@@ -39,5 +39,6 @@
         <Button text="删除" styleClass="btn" />
       </VBox>
     </HBox>
+
   </center>
 </BorderPane>
