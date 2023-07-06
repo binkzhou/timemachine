@@ -1,6 +1,6 @@
-package com.timemachine;
+package com.timeMachine;
 
-import com.timemachine.ui.App;
+import com.timeMachine.ui.App;
 
 public class Main {
     public static void main(String [] args) {

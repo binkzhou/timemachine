@@ -3,14 +3,15 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.VBox?>
-<BorderPane styleClass="main-container" xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.timemachine.ui.Add">
-  <left>
-    <VBox fx:id="left" styleClass="left" alignment="TOP_CENTER"  xmlns:fx="http://javafx.com/fxml">
-    </VBox>
-  </left>
-  <center>
-    <!-- 右侧内容 -->
-    <Label text="右侧内容区域" style="-fx-font-size: 20px; -fx-alignment: center;" />
-  </center>
+<?import javafx.scene.layout.HBox?>
+<BorderPane fx:id="pane" styleClass="main-container" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.timeMachine.ui.Main">
+  <bottom>
+    <HBox  styleClass="add-btns" alignment="TOP_CENTER"  xmlns:fx="http://javafx.com/fxml">
+      <ToggleButton  text="备份目录"  styleClass="menu-button,menu-button-select"  onMouseClicked="#onMenuButtonClick" />
+      <ToggleButton  text="目标目录"  styleClass="menu-button"  onMouseClicked="#onMenuButtonClick" />
+      <ToggleButton  text="日志"  styleClass="menu-button"  onMouseClicked="#onMenuButtonClick" />
+      <ToggleButton  text="设置"  styleClass="menu-button"  onMouseClicked="#onMenuButtonClick"/>
+    </HBox>
+  </bottom>
 </BorderPane>

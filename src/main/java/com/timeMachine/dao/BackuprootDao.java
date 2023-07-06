@@ -1,14 +1,11 @@
-package com.timemachine.dao;
+package com.timeMachine.dao;
 
-import com.timemachine.bean.Backuproot;
+import com.timeMachine.bean.Backuproot;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
-import java.io.File;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
 
 public class BackuprootDao {
 
@@ -32,5 +29,11 @@ public class BackuprootDao {
 
         }
         return BackupRootList;
+    }
+
+
+    public static boolean delete(String id) {
+        MySQLHelper mysqlHelper = new MySQLHelper("dbconfig");
+        return mysqlHelper.exeSql("delete from tb_backuproot where id=" + id);
     }
 }

@@ -94,7 +94,7 @@
             <!-- Default configuration for running with: mvn clean javafx:run -->
             <id>default-cli</id>
             <configuration>
-              <mainClass>com.example.timemachine/com.timemachine.ui.App</mainClass>
+              <mainClass>com.example.timemachine/com.timeMachine.ui.App</mainClass>
               <launcher>app</launcher>
               <jlinkZipName>app</jlinkZipName>
               <jlinkImageName>app</jlinkImageName>
@@ -112,7 +112,7 @@
             <configuration>
               <archive>
                 <manifest>
-                  <mainClass>com.timemachine.Main</mainClass>
+                  <mainClass>com.timeMachine.Main</mainClass>
                 </manifest>
               </archive>
               <descriptorRefs>

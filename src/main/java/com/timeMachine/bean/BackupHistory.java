@@ -1,4 +1,4 @@
-package com.timemachine.bean;
+package com.timeMachine.bean;
 
 import lombok.Data;
 

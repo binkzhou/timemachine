@@ -1,8 +1,8 @@
-package com.timemachine.dao;
+package com.timeMachine.dao;
 
-import com.timemachine.bean.BackupHistory;
-import com.timemachine.bean.Backuproot;
-import com.timemachine.bean.Backuptargetroot;
+import com.timeMachine.bean.BackupHistory;
+import com.timeMachine.bean.Backuproot;
+import com.timeMachine.bean.Backuptargetroot;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
