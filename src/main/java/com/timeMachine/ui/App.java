@@ -11,11 +11,11 @@ public class App extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("/view/main.fxml"));
-        BorderPane root = (BorderPane)fxmlLoader.load();
-        System.out.println(root);
+        BorderPane root = fxmlLoader.load();
         Scene scene = new Scene(root, 700, 500);
         scene.getStylesheets().add(Objects.requireNonNull(App.class.getResource("/css/style.css")).toExternalForm());
         stage.setScene(scene);
+        stage.setTitle("时间机器");
         stage.setResizable(false);
         stage.show();
     }
