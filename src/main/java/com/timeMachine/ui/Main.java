@@ -23,6 +23,8 @@ public class Main {
     private HBox backUi;
 
     private HBox targetUi;
+    
+    private BorderPane runUi;
 
     @FXML
     private void onMenuButtonClick(MouseEvent event) throws Exception {
@@ -33,7 +35,8 @@ public class Main {
             pane.setCenter(this.backUi);
         }else if(text.equals("目标目录")){
             pane.setCenter(this.targetUi);
-//            pane.setCenter(new Button());
+        }else if(text.equals("运行")){
+            pane.setCenter(this.runUi);
         }else {
             pane.setCenter(new Button());
         }
@@ -49,9 +52,11 @@ public class Main {
 
     public void initialize() throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("/view/back.fxml"));
-        this.backUi = (HBox)fxmlLoader.load();
+        this.backUi = fxmlLoader.load();
         pane.setCenter(this.backUi);
         FXMLLoader fxmlTargetLoader = new FXMLLoader(App.class.getResource("/view/target.fxml"));
-        this.targetUi = (HBox)fxmlTargetLoader.load();
+        this.targetUi = fxmlTargetLoader.load();
+        FXMLLoader fxmlRunLoader = new FXMLLoader(App.class.getResource("/view/run.fxml"));
+        this.runUi = fxmlRunLoader.load();
     }
 }

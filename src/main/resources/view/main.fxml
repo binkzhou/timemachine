@@ -10,7 +10,7 @@
       <ToggleButton  text="备份目录"  styleClass="menu-button,menu-button-select"  onMouseClicked="#onMenuButtonClick" />
       <ToggleButton  text="目标目录"  styleClass="menu-button"  onMouseClicked="#onMenuButtonClick" />
       <ToggleButton  text="运行"  styleClass="menu-button"  onMouseClicked="#onMenuButtonClick" />
-      <ToggleButton  text="日志"  styleClass="menu-button"  onMouseClicked="#onMenuButtonClick"/>
+<!--      <ToggleButton  text="日志"  styleClass="menu-button"  onMouseClicked="#onMenuButtonClick"/>-->
     </VBox>
   </left>
 </BorderPane>

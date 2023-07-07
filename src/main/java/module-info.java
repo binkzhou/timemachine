@@ -1,7 +1,7 @@
 module com.timeMachine {
     requires javafx.controls;
     requires javafx.fxml;
-        requires org.controlsfx.controls;
+    requires org.controlsfx.controls;
     requires static lombok;
     requires java.sql;
     requires log4j;

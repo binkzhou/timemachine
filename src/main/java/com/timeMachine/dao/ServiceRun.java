@@ -3,6 +3,8 @@ package com.timeMachine.dao;
 import com.timeMachine.bean.BackupHistory;
 import com.timeMachine.bean.Backuproot;
 import com.timeMachine.bean.Backuptargetroot;
+import javafx.concurrent.Service;
+import javafx.concurrent.Task;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
@@ -20,8 +22,8 @@ import java.util.*;
 /**
  * Created by liuq2 on 2018/3/19.
  */
-public class serviceRun {
-    static Logger logger = Logger.getLogger(serviceRun.class);
+public class ServiceRun extends Service<Void> {
+    static Logger logger = Logger.getLogger(ServiceRun.class);
     private MySQLHelper mysqlHelper;
     private HttpClintTool myclient;
     private List<Backuproot> BackupRootList=new ArrayList<>();
@@ -456,7 +458,9 @@ public class serviceRun {
 
     public static void main(String[] args)
     {
-        serviceRun serviceRun=new serviceRun();
+        ServiceRun serviceRun=new ServiceRun();
+        System.out.println("111");
+        System.out.println(Arrays.toString(args));
         try {
             serviceRun.init();
             serviceRun.loadBackupRoot();
@@ -486,4 +490,15 @@ public class serviceRun {
         }
     }
 
+    @Override
+    protected Task<Void> createTask() {
+        return new Task<Void>() {
+            @Override
+            protected Void call() throws Exception {
+                loadBackupRoot();
+                XCopy();
+                return null;
+            }
+        };
+    }
 }

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<BorderPane  styleClass="main-container" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.timeMachine.ui.AddTargetDialog">
+    <center>
+        <HBox  alignment="CENTER" spacing="10" >
+            <Label>路径</Label>
+            <TextField styleClass="add-path" fx:id="directoryPath" />
+            <Button styleClass="add-more"  text="..." onMouseClicked="#openFileExplorer"/>
+        </HBox>
+    </center>
+    <bottom>
+        <HBox styleClass="hbox" alignment="CENTER_RIGHT" spacing="10" >
+            <ToggleButton  text="确认" styleClass="btn" onMouseClicked="#confirmAction"  />
+            <ToggleButton  text="取消"  styleClass="btn" onMouseClicked="#cancelAction" />
+        </HBox>
+    </bottom>
+</BorderPane>

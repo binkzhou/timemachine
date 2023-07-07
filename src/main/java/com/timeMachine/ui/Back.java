@@ -85,7 +85,6 @@ public class Back {
                 getAll();
                 // 获取最后一个项目的索引
                 int lastIndex = listView.getItems().size() - 1;
-
                 // 滚动到最底部
                 listView.scrollTo(lastIndex);
 

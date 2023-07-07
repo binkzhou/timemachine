@@ -5,13 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="611cd45c-676c-48a8-83c7-f8e4b360b11a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/35ac42d0-4a70-4aa4-b393-b87e92e53ebe.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/35ac42d0-4a70-4aa4-b393-b87e92e53ebe.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/timeMachine/dao/BackuprootDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/timeMachine/dao/BackuprootDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/timeMachine/ui/AddDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/timeMachine/ui/AddDialog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/timeMachine/dao/serviceRun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/timeMachine/dao/ServiceRun.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/timeMachine/ui/Back.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/timeMachine/ui/Back.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/add_dialog.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/add_dialog.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/back.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/back.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/timeMachine/ui/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/timeMachine/ui/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/timeMachine/ui/Target.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/timeMachine/ui/Target.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/view/main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/main.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/view/target.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/target.fxml" afterDir="false" />
     </list>
@@ -87,8 +87,11 @@
       <recent name="com.timemachine" />
       <recent name="" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.timeMachine.ui" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.App">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.timeMachine.ui.App" />
       <module name="timemachine" />
@@ -128,8 +131,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="serviceRun" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.timeMachine.dao.serviceRun" />
+    <configuration name="ServiceRun" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.timeMachine.dao.ServiceRun" />
       <module name="timemachine" />
       <extension name="coverage">
         <pattern>
@@ -143,9 +146,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.App" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.serviceRun" />
+        <item itemvalue="Application.ServiceRun" />
+        <item itemvalue="Application.App" />
         <item itemvalue="Application.HelloApplication" />
       </list>
     </recent_temporary>
@@ -169,7 +172,7 @@
       <workItem from="1688462069821" duration="948000" />
       <workItem from="1688516969505" duration="961000" />
       <workItem from="1688626603415" duration="9343000" />
-      <workItem from="1688689595339" duration="5258000" />
+      <workItem from="1688689595339" duration="9369000" />
     </task>
     <servers />
   </component>

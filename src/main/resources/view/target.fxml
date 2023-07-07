@@ -4,7 +4,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.layout.HBox?>
 <HBox styleClass="file-list"  xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.timeMachine.ui.Back">
+      fx:controller="com.timeMachine.ui.Target">
     <VBox HBox.hgrow="ALWAYS">
         <ListView fx:id="listView" editable="true"  styleClass="custom-list-view" VBox.vgrow="ALWAYS">
         </ListView>
