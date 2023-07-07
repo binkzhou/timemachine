@@ -1,5 +1,7 @@
 package com.timeMachine.ui;
 
+import com.timeMachine.bean.Backuproot;
+import com.timeMachine.dao.BackuprootDao;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
@@ -15,18 +17,22 @@ public class AddDialog {
 
     private Stage dialogStage;
 
+    /**
+     * 选择的参数
+     */
+    private Backuproot backuproot;
+
     @FXML
     private TextField directoryPath;
 
 
-//    @FXML
-//    private Button confirmButton;
-//
-//    @FXML
-//    private Button cancelButton;
-
     public void setDialogStage(Stage dialogStage) {
         this.dialogStage = dialogStage;
+    }
+
+    public void setParameters(Backuproot backuproot){
+        this.backuproot = backuproot;
+        this.directoryPath.setText(backuproot.getRootpath());
     }
 
     public boolean isConfirmed() {
@@ -36,8 +42,17 @@ public class AddDialog {
     @FXML
     private void confirmAction() {
         System.out.println("confirm");
-        // 处理确认按钮的逻辑
-        isConfirmed = true;
+        String text = directoryPath.getText();
+        if(!text.equals("")){
+            if(backuproot==null){
+                isConfirmed = BackuprootDao.add(text);
+            }else {
+                isConfirmed = BackuprootDao.edit(String.valueOf(backuproot.getId()),text);
+            }
+        }else {
+            // 处理确认按钮的逻辑
+            isConfirmed = false;
+        }
         closeDialog();
     }
 
@@ -55,8 +70,6 @@ public class AddDialog {
 
     @FXML
     private void openFileExplorer(){
-//        Stage stage = (Stage) selectPathButton.getScene().getWindow();
-//        stage.hide(); // 隐藏父窗口
         DirectoryChooser directoryChooser = new DirectoryChooser();
         directoryChooser.setTitle("选择文件夹");
         File selectedDirectory = directoryChooser.showDialog(dialogStage);

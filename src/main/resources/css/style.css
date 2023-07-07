@@ -96,10 +96,30 @@
 text-field {
     -fx-padding: 0;
     -fx-border-width: 0;
-    /* 添加其他样式调整 */
 }
 
 .hbox{
     -fx-padding: 20px;
     -fx-pref-height: 50px;
 }
+.add-path{
+    -fx-min-width: 300px;
+    -fx-min-height: 24px;
+    -fx-max-height: 24px;
+    -fx-background-color: #fff;
+    -fx-border-color: #C9CCD6;
+    -fx-border-radius: 2px;
+}
+
+.add-path:focused {
+    -fx-border-width: 2px;
+    -fx-border-color: #3574F0;
+}
+
+.add-more{
+    -fx-background-color: #fff;
+    -fx-border-color: #ccc;
+    -fx-border-radius: 2px;
+}
+
+

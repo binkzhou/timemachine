@@ -4,15 +4,14 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.layout.HBox?>
 <HBox styleClass="file-list"  xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.timeMachine.ui.Target">
+      fx:controller="com.timeMachine.ui.Back">
     <VBox HBox.hgrow="ALWAYS">
         <ListView fx:id="listView" editable="true"  styleClass="custom-list-view" VBox.vgrow="ALWAYS">
         </ListView>
     </VBox>
     <VBox  prefWidth="110" alignment="TOP_RIGHT" spacing="10">
-        <Button text="新建" styleClass="btn" />
-        <Button text="编辑" styleClass="btn" />
-        <Button text="浏览" styleClass="btn" />
-        <Button text="删除" styleClass="btn" />
+        <Button onMouseClicked="#addDir" text="新建" styleClass="btn" />
+        <Button text="编辑" onMouseClicked="#editDir" styleClass="btn" />
+        <Button onMouseClicked="#deleteDir" text="删除" styleClass="btn" />
     </VBox>
 </HBox>

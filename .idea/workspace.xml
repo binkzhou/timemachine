@@ -5,24 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="611cd45c-676c-48a8-83c7-f8e4b360b11a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/timeMachine/ui/Back.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/timemachine/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/timeMachine/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/timemachine/bean/BackupHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/timeMachine/bean/BackupHistory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/timemachine/bean/Backuproot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/timeMachine/bean/Backuproot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/timemachine/bean/Backuptargetroot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/timeMachine/bean/Backuptargetroot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/timemachine/dao/BackuprootDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/timeMachine/dao/BackuprootDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/timemachine/dao/HttpClintTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/timeMachine/dao/HttpClintTool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/timemachine/dao/MySQLHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/timeMachine/dao/MySQLHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/timemachine/dao/serviceRun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/timeMachine/dao/serviceRun.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/timemachine/ui/Add.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/timemachine/ui/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/timeMachine/ui/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/timeMachine/dao/BackuprootDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/timeMachine/dao/BackuprootDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/timeMachine/ui/AddDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/timeMachine/ui/AddDialog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/timeMachine/ui/Back.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/timeMachine/ui/Back.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/add.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/add.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/hello-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/add_dialog.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/add_dialog.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/back.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/back.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/view/main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/main.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/target.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/target.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +62,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "MavenSettings",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -178,6 +169,7 @@
       <workItem from="1688462069821" duration="948000" />
       <workItem from="1688516969505" duration="961000" />
       <workItem from="1688626603415" duration="9343000" />
+      <workItem from="1688689595339" duration="5258000" />
     </task>
     <servers />
   </component>

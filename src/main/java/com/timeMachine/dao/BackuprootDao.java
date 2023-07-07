@@ -11,7 +11,6 @@ public class BackuprootDao {
 
     public static ObservableList<Backuproot> all() {
         MySQLHelper mysqlHelper = new MySQLHelper("dbconfig");
-//        List<Backuproot> BackupRootList=new ArrayList<>();
         ObservableList<Backuproot> BackupRootList = FXCollections.observableArrayList();
         ResultSet ret=mysqlHelper.querySql("select * from tb_backuproot");
 
@@ -35,5 +34,16 @@ public class BackuprootDao {
     public static boolean delete(String id) {
         MySQLHelper mysqlHelper = new MySQLHelper("dbconfig");
         return mysqlHelper.exeSql("delete from tb_backuproot where id=" + id);
+    }
+
+    public static boolean add(String content){
+        MySQLHelper mysqlHelper = new MySQLHelper("dbconfig");
+        return mysqlHelper.exeSql("insert into tb_backuproot ( rootpath ) values ( \"" + content + "\" );");
+    }
+
+    public static boolean edit(String id, String content){
+        MySQLHelper mysqlHelper = new MySQLHelper("dbconfig");
+        // UPDATE runoob_tbl SET runoob_title='学习 C++' WHERE runoob_id=3;
+        return mysqlHelper.exeSql("update tb_backuproot set rootpath = '" + content + "' where id = "+ id);
     }
 }
