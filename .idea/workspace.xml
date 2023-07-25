@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="611cd45c-676c-48a8-83c7-f8e4b360b11a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/timeMachine/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/timeMachine/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/timeMachine/dao/ServiceRun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/timeMachine/dao/ServiceRun.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +60,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -86,7 +89,7 @@
       <recent name="com.timeMachine.ui" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.App">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.timeMachine.ui.App" />
       <module name="timemachine" />
@@ -141,8 +144,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.App" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.App" />
         <item itemvalue="Application.ServiceRun" />
         <item itemvalue="Application.HelloApplication" />
       </list>
@@ -168,7 +171,10 @@
       <workItem from="1688516969505" duration="961000" />
       <workItem from="1688626603415" duration="9343000" />
       <workItem from="1688689595339" duration="10228000" />
-      <workItem from="1688700167383" duration="689000" />
+      <workItem from="1688700167383" duration="1576000" />
+      <workItem from="1688950669506" duration="79000" />
+      <workItem from="1690187413236" duration="3564000" />
+      <workItem from="1690245351684" duration="770000" />
     </task>
     <servers />
   </component>

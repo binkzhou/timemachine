@@ -1,5 +1,4 @@
 package com.timeMachine;
-
 import com.timeMachine.ui.App;
 
 public class Main {

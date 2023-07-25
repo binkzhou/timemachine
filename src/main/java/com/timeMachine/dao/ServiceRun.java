@@ -208,7 +208,7 @@ public class ServiceRun extends Service<Void> {
             }
             File fileHandle=new File(file);
             long id=0;
-           if(!mapFile.containsKey(file))
+           if(!mapFile.containsKey(file.replace("\\","\\\\")))
            {
                String sqlquery="select * from tb_backfiles where filepath='"+file.replace("\\","\\\\").replace("'","\\'")+"' and backuprootid="+backuproot.getId();
                //第一次拷贝，创建档案
@@ -224,7 +224,7 @@ public class ServiceRun extends Service<Void> {
            }
            else
            {
-               id=mapFile.get(file);
+               id=mapFile.get(file.replace("\\","\\\\"));
            }
            //判断文件是否有修改
             ResultSet ret=mysqlHelper.querySql("select * from tb_backfilehistory where backupfileid="+id+" order by id desc limit 1");
